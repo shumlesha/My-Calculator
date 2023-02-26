@@ -11,6 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculatorForAndroid"
         tools:targetApi="31">
+
+
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:label="@string/title_activity_second"
+            android:theme="@style/Theme.CalculatorForAndroid.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

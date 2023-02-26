@@ -4,15 +4,489 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/black"
+    android:textColor="@color/black"
 
-    <TextView
+
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+
+        android:text="0"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but0_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but0_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but0_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but0_gor1" />
+
+    <Button
+        android:id="@+id/comma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text=","
+
+        app:layout_constraintBottom_toBottomOf="@+id/but0_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butcomma_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butcomma_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but0_gor1" />
+
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleSecond"
+        android:text="="
+
+        app:layout_constraintBottom_toBottomOf="@+id/but0_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butequal_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butequal_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but0_gor1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/but1_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but1_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but0_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but1_gor1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="2"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but1_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but0_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but2_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but1_gor1" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="3"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but1_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butcomma_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butcomma_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but1_gor1" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleSecond"
+        android:text="+"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but1_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butequal_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butequal_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but1_gor1" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="4"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but4_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but1_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but0_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but4_gor1" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="5"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but4_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but0_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but2_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but4_gor1" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="6"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but4_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butcomma_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butcomma_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but4_gor1" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleSecond"
+        android:text="-"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but4_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butequal_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butequal_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but4_gor1" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="7"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but7_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but1_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but0_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but7_gor1" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="8"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but7_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but0_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but2_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but7_gor1" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="9"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but7_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butcomma_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butcomma_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but7_gor1" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleSecond"
+        android:text="×"
+
+        app:layout_constraintBottom_toBottomOf="@+id/but7_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butequal_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butequal_ver1"
+        app:layout_constraintTop_toTopOf="@+id/but7_gor1" />
+
+    <Button
+        android:id="@+id/erase"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="AC"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buterase_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but1_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but0_ver1"
+        app:layout_constraintTop_toTopOf="@+id/buterase_gor1" />
+
+    <Button
+        android:id="@+id/plusminus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="±"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buterase_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/but0_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but2_ver1"
+        app:layout_constraintTop_toTopOf="@+id/buterase_gor1" />
+
+    <Button
+        android:id="@+id/percent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleFirst"
+        android:text="%"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buterase_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butcomma_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butcomma_ver1"
+        app:layout_constraintTop_toTopOf="@+id/buterase_gor1" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonStyleSecond"
+        android:text="÷"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buterase_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butequal_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butequal_ver1"
+        app:layout_constraintTop_toTopOf="@+id/buterase_gor1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but0_ver1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.039" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but0_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8492" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but0_ver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.482" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but0_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.948" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butcomma_ver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butcomma_ver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.723" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butequal_ver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.76" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butequal_ver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96354" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but1_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.732" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but1_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.831" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but1_ver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but2_ver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but4_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6156" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but4_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.714" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but7_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.498" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/but7_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.597" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buterase_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.381" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buterase_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/divline_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.368" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/divline_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butbacksp_ver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butbacksp_ver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.948" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butbacksp_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3033" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butbacksp_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.333952" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/calctext_gor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/calctext_gor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.069" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/graydiv"
+
+        app:layout_constraintBottom_toBottomOf="@+id/divline_gor2"
+        app:layout_constraintEnd_toStartOf="@+id/butequal_ver2"
+        app:layout_constraintStart_toEndOf="@+id/but0_ver1"
+        app:layout_constraintTop_toTopOf="@+id/divline_gor1" />
+
+    <ImageButton
+        android:id="@+id/backspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/butbacksp_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butbacksp_ver2"
+        app:layout_constraintStart_toStartOf="@+id/butbacksp_ver1"
+        app:layout_constraintTop_toTopOf="@+id/butbacksp_gor1"
+        app:srcCompat="@drawable/vector" />
+
+    <TextView
+        android:id="@+id/ResultField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="57sp"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="@+id/text_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butequal_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but0_ver1"
+        app:layout_constraintTop_toTopOf="@+id/text_gor1"/>
+
+    <TextView
+        android:id="@+id/CalcTextField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="More Fonts..."
+        android:text="Calculator"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="@+id/calctext_gor2"
+        app:layout_constraintEnd_toEndOf="@+id/butequal_ver2"
+        app:layout_constraintStart_toStartOf="@+id/but0_ver1"
+        app:layout_constraintTop_toTopOf="@+id/calctext_gor1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
