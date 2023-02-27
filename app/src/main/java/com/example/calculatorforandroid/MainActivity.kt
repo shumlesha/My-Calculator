@@ -37,214 +37,273 @@ class MainActivity : AppCompatActivity() {
         binding.btn0.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             val ch: Boolean
+            if (ans != "Error"){
+                if (ans != ""){
+                    var temp = ans.replace("0","")
+                    ch = operations.contains(ans[ans.length-1]) ||
+                            !(temp != "" && operations.contains(temp[temp.length-1]) &&
+                                    temp.length != ans.length && temp[temp.length-1] != ',')
 
-            if (ans != ""){
-                var temp = ans.replace("0","")
-                ch = operations.contains(ans[ans.length-1]) ||
-                        !(temp != "" && operations.contains(temp[temp.length-1]) &&
-                                temp.length != ans.length && temp[temp.length-1] != ',')
 
 
+                }
+                else{
+                    ch = true
+                }
 
+                if ((ch || (ans != "" && ans[ans.length-1] == ',')) && ans != "0"){
+                    binding.ResultField.text = ans + "0"
+                }
+                else if (ans == ""){
+                    binding.ResultField.text = "0"
+                }
             }
             else{
-                ch = true
-            }
-
-            if ((ch || (ans != "" && ans[ans.length-1] == ',')) && ans != "0"){
-                binding.ResultField.text = ans + "0"
-            }
-            else if (ans == ""){
                 binding.ResultField.text = "0"
             }
+
 
 
         }
         binding.btn1.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "1"
-            }
-            else {
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "1"
+            if (ans != "Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
                 }
-                else{
-                    binding.ResultField.text = "1"
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "1"
+                }
+                else {
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "1"
+                    }
+                    else{
+                        binding.ResultField.text = "1"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "1"
+        }
+
 
 
         }
         binding.btn2.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "2"
-            }
-            else{
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "2"
+            if (ans != "Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
+                }
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "2"
                 }
                 else{
-                    binding.ResultField.text = "2"
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "2"
+                    }
+                    else{
+                        binding.ResultField.text = "2"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "2"
+            }
+
 
         }
         binding.btn3.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "3"
-            }
-            else{
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "3"
+            if (ans != "Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
+                }
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "3"
                 }
                 else{
-                    binding.ResultField.text = "3"
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "3"
+                    }
+                    else{
+                        binding.ResultField.text = "3"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "3"
+            }
+
 
 
         }
         binding.btn4.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "4"
-            }
-            else{
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "4"
+            if (ans != "Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
+                }
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "4"
                 }
                 else{
-                    binding.ResultField.text = "4"
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "4"
+                    }
+                    else{
+                        binding.ResultField.text = "4"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "4"
+            }
+
 
 
         }
         binding.btn5.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "5"
-            }
-            else{
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "5"
+            if (ans!= "Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
+                }
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "5"
                 }
                 else{
-                    binding.ResultField.text = "5"
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "5"
+                    }
+                    else{
+                        binding.ResultField.text = "5"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "5"
+            }
+
 
 
         }
         binding.btn6.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "6"
-            }
-            else{
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "6"
+            if (ans!="Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
+                }
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "6"
                 }
                 else{
-                    binding.ResultField.text = "6"
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "6"
+                    }
+                    else{
+                        binding.ResultField.text = "6"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "6"
+            }
+
 
 
         }
         binding.btn7.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "7"
-            }
-            else{
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "7"
+            if (ans != "Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
+                }
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "7"
                 }
                 else{
-                    binding.ResultField.text = "7"
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "7"
+                    }
+                    else{
+                        binding.ResultField.text = "7"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "7"
+            }
+
 
 
         }
         binding.btn8.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "8"
-            }
-            else{
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "8"
+            if (ans != "Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
+                }
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "8"
                 }
                 else{
-                    binding.ResultField.text = "8"
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "8"
+                    }
+                    else{
+                        binding.ResultField.text = "8"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "8"
+            }
+
 
 
         }
         binding.btn9.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             var checker: Boolean = false
-            if (ans.length >= 2){
-                checker = operations.contains(ans[ans.length-2]) &&
-                        ans[ans.length-1] == '0' && ans[ans.length-2] != ','
-            }
-            if (checker){
-                binding.ResultField.text = ans.substring(0, ans.length-1) + "9"
-            }
-            else{
-                if (ans != "0"){
-                    binding.ResultField.text = ans + "9"
+            if (ans != "Error"){
+                if (ans.length >= 2){
+                    checker = operations.contains(ans[ans.length-2]) &&
+                            ans[ans.length-1] == '0' && ans[ans.length-2] != ','
+                }
+                if (checker){
+                    binding.ResultField.text = ans.substring(0, ans.length-1) + "9"
                 }
                 else{
-                    binding.ResultField.text = "9"
+                    if (ans != "0"){
+                        binding.ResultField.text = ans + "9"
+                    }
+                    else{
+                        binding.ResultField.text = "9"
+                    }
                 }
             }
+            else{
+                binding.ResultField.text = "9"
+            }
+
 
 
         }
@@ -304,22 +363,28 @@ class MainActivity : AppCompatActivity() {
         binding.minus.setOnClickListener{
             val ans = binding.ResultField.text.toString()
             val check: Boolean
-            if (ans != ""){
+            if (ans != "Error"){
+                if (ans != ""){
 
-                check = (ans[ans.length-1] == '+' || ans[ans.length-1] == '-')
-                if (check && ans[ans.length-1] != ',' && ans.length != 1){
+                    check = (ans[ans.length-1] == '+' || ans[ans.length-1] == '-')
+                    if (check && ans[ans.length-1] != ',' && ans.length != 1){
 
-                    binding.ResultField.text = ans.substring(0, ans.length-1) + "-"
+                        binding.ResultField.text = ans.substring(0, ans.length-1) + "-"
+                    }
+                }
+                else{
+                    check = true
+                }
+                if (ans != "" && (!(check) || ans[ans.length-1] == ',') ||
+                    ans==""){
+                    binding.ResultField.text = ans + "-"
+
                 }
             }
             else{
-                check = true
+                binding.ResultField.text =  "-"
             }
-            if (ans != "" && (!(check) || ans[ans.length-1] == ',') ||
-                    ans==""){
-                binding.ResultField.text = ans + "-"
 
-            }
         }
         binding.multiply.setOnClickListener{
             val ans = binding.ResultField.text.toString()
@@ -608,6 +673,7 @@ class MainActivity : AppCompatActivity() {
                         if (elem == "÷"){
                             if (f == "0" || f == "-0"){
                                 binding.ResultField.text = "Error"
+
                                 flag = false
                                 break
                             }
